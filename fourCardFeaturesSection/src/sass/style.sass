@@ -1,58 +1,10 @@
-// Fonts
-@font-face 
-    font-family: 'Poppins-Regular'
-    src: url('../fonts/Poppins-Regular.eot')
-    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Regular.woff2') format('woff2'), url('../fonts/Poppins-Regular.woff') format('woff'), url('../fonts/Poppins-Regular.ttf') format('truetype')
-    font-weight: normal
-    font-style: normal
+@import 'fonts'
 
-@font-face 
-    font-family: 'Poppins-ExtraLight'
-    src: url('../fonts/Poppins-ExtraLight.eot')
-    src: url('../fonts/Poppins-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-ExtraLight.woff2') format('woff2'), url('../fonts/Poppins-ExtraLight.woff') format('woff'), url('../fonts/Poppins-ExtraLight.ttf') format('truetype')
-    font-weight: 200
-    font-style: normal
+@import 'mixins'
 
-@font-face 
-    font-family: 'Poppins-SemiBold'
-    src: url('../fonts/Poppins-SemiBold.eot')
-    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-SemiBold.woff2') format('woff2'), url('../fonts/Poppins-SemiBold.woff') format('woff'), url('../fonts/Poppins-SemiBold.ttf') format('truetype')
-    font-weight: 600
-    font-style: normal
+@import 'base'
 
-// Font mixins
-=poppinsExtraLight($fz)
-    font-family: 'Poppins-ExtraLight', sans-serif
-    font-size: $fz
-
-=poppinsReg($fz)
-    font-family: 'Poppins-Regular', sans-serif
-    font-size: $fz
-
-=poppinsSemiBold($fz)
-    font-family: 'Poppins-SemiBold', sans-serif
-    font-size: $fz
-
-//Colors
-$primary-red: hsl(0, 78%, 62%)
-$primary-cyan: hsl(180, 62%, 55%)
-$primary-orange: hsl(34, 97%, 64%)
-$primary-blue: hsl(212, 86%, 64%)
-
-$neutral-dark-blue: hsl(234, 12%, 34%)
-$neutral-grayish-blue: hsl(229, 6%, 66%)
-$neutral-light-gray: hsl(0, 0%, 98%)
-
-$white: #fff
-
-// Base Settings
-body
-    +poppinsReg(1.4rem)
-    font-size: 62.5%
-    text-align: center
-
-.container-fluid
-    padding: 3% 15%
+@import 'colors'
 
 //Section Heading
 .section-heading
@@ -113,16 +65,4 @@ body
     grid-area: c4
 
 
-@media (max-width: 992px)
-    .grid-container
-        display: grid
-        grid-template-columns: 1fr 1fr
-        grid-template-rows: 1fr 1fr
-        grid-gap: 1rem 1rem
-        grid-template-areas: "c1 c2" "c3 c4"
-
-@media (max-width: 768px)
-    .grid-container
-        display: block
-    .card
-        margin: 3% 0
+@import 'media'
