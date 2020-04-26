@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Karla-Regular";
+  src: url("../fonts/Karla-Regular.eot");
+  src: url("../fonts/Karla-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Karla-Regular.woff2") format("woff2"), url("../fonts/Karla-Regular.woff") format("woff"), url("../fonts/Karla-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Karla-Bold";
+  src: url("../fonts/Karla-Bold.eot");
+  src: url("../fonts/Karla-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Karla-Bold.woff2") format("woff2"), url("../fonts/Karla-Bold.woff") format("woff"), url("../fonts/Karla-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  color: #fff;
+  font-size: 62.5%;
+  text-align: left;
+  font-family: "Karla-Regular", sans-serif;
+  font-size: 1.4rem;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+button:active {
+  outline: 0 !important;
+}
+
+.button {
+  background-color: #c0df34;
+  color: #fff;
+  min-height: 4rem;
+  border: none;
+}
+.button:hover {
+  background-color: #b3d421;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40% 1fr;
+  grid-template-areas: "pricing-header pricing-header" "pricing-cta pricing-info";
+}
+.grid-item {
+  padding: 3rem;
+}
+
+.pricing-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  background-color: #e5eff5;
+  grid-area: pricing-header;
+  padding-bottom: 0;
+}
+.pricing-header h3 {
+  font-family: "Karla-Bold", sans-serif;
+  font-size: 2rem;
+  color: #2ab2af;
+  padding-bottom: 1rem;
+}
+.pricing-header h4 {
+  font-family: "Karla-Bold", sans-serif;
+  font-size: 1.6rem;
+  color: #c0df34;
+}
+.pricing-header p {
+  color: #98a6bd;
+  font-size: 1.4rem;
+}
+
+.pricing-cta {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  background-color: #2ab2af;
+  grid-area: pricing-cta;
+}
+.pricing-cta h4 {
+  padding-bottom: 1.2rem;
+}
+.pricing-cta span {
+  font-weight: ligter;
+  font-size: 1.2rem;
+}
+.pricing-cta span strong {
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+.pricing-cta p {
+  font-size: 1.2rem;
+  padding-bottom: 15%;
+}
+
+.pricing-info {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  background-color: #3dd1cf;
+  grid-area: pricing-info;
+}
+.pricing-info h4 {
+  padding-bottom: 1.2rem;
+}
+.pricing-info p {
+  font-size: 1.2rem;
+  color: #f2f2f2;
+}
