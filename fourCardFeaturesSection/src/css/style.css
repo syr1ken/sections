@@ -27,7 +27,7 @@ body {
 }
 
 .container-fluid {
-  padding: 7% 15%;
+  padding: 3% 15%;
 }
 
 .section-heading {
@@ -48,9 +48,113 @@ body {
   padding: 2% 0;
 }
 
+#features {
+  background-color: #fafafa;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem 1rem;
+  grid-template-areas: ". c2 ." "c1 c2 c4" "c1 c3 c4" ". c3 .";
+}
+
 .card {
   border: none;
 }
+.card-body {
+  display: grid;
+  padding: 10%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 1fr 1fr;
+  grid-template-areas: "header" "body" "footer";
+  text-align: left;
+}
+.card-body h3 {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 1.3rem;
+}
+.card-body p {
+  color: #a3a5ae;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
 .card-image {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  place-self: end;
   width: 25%;
+}
+
+.c1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  border-top: 5px solid #45d3d3;
+  grid-area: c1;
+}
+
+.c2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  border-top: 5px solid #ea5353;
+  grid-area: c2;
+}
+
+.c3 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  border-top: 5px solid #fcaf4a;
+  grid-area: c3;
+}
+
+.c4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  border-top: 5px solid #549ef2;
+  grid-area: c4;
+}
+
+@media (max-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem 1rem;
+    grid-template-areas: "c1 c2" "c3 c4";
+  }
+  .c1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .c2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+  }
+  .c3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .c4 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+  }
+}
+@media (max-width: 768px) {
+  .grid-container {
+    display: block;
+  }
+
+  .card {
+    margin: 3% 0;
+  }
 }

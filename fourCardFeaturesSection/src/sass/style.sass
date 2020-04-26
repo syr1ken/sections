@@ -43,6 +43,8 @@ $neutral-dark-blue: hsl(234, 12%, 34%)
 $neutral-grayish-blue: hsl(229, 6%, 66%)
 $neutral-light-gray: hsl(0, 0%, 98%)
 
+$white: #fff
+
 // Base Settings
 body
     +poppinsReg(1.4rem)
@@ -50,7 +52,7 @@ body
     text-align: center
 
 .container-fluid
-    padding: 7% 15%
+    padding: 3% 15%
 
 //Section Heading
 .section-heading
@@ -65,9 +67,62 @@ body
         line-height: 1.5
         padding: 2% 0
 
-
 // features section
+#features
+    background-color: $neutral-light-gray
+
+.grid-container
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr 1fr
+    grid-gap: 1rem 1rem
+    grid-template-areas: ". c2 ." "c1 c2 c4" "c1 c3 c4" ". c3 ."
+
+// Cards
 .card
     border: none
+    &-body
+        display: grid
+        padding: 10%
+        grid-template-columns: 1fr
+        grid-template-rows: 20% 1fr 1fr
+        grid-template-areas: "header" "body" "footer"
+        text-align: left
+        h3
+            +poppinsSemiBold(1.3rem)
+        p
+            color: $neutral-grayish-blue
+            font-size: 0.8rem
+            line-height: 1.5
     &-image
-        width:25%
+        grid-area: footer
+        place-self: end
+        width: 25%
+
+.c1
+    border-top: 5px solid $primary-cyan
+    grid-area: c1
+.c2
+    border-top: 5px solid $primary-red
+    grid-area: c2
+.c3
+    border-top: 5px solid $primary-orange
+    grid-area: c3
+.c4
+    border-top: 5px solid $primary-blue
+    grid-area: c4
+
+
+@media (max-width: 992px)
+    .grid-container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        grid-gap: 1rem 1rem
+        grid-template-areas: "c1 c2" "c3 c4"
+
+@media (max-width: 768px)
+    .grid-container
+        display: block
+    .card
+        margin: 3% 0
