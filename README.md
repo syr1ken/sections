@@ -1,4 +1,4 @@
 # web
 css, html, js solutions for web
 
-<a href="web/fourCardFeaturesSection/index.html"> Four Cards Feature Section </a>
+<a href="https://syr1ken.github.io/web/fourCardFeaturesSection/"> Four Cards Feature Section </a>
