@@ -21,7 +21,7 @@ body {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 7% 18%;
 }
 
 button:focus {
@@ -44,11 +44,11 @@ button:active {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40% 1fr;
+  grid-template-rows: 43% 1fr;
   grid-template-areas: "pricing-header pricing-header" "pricing-cta pricing-info";
 }
 .grid-item {
-  padding: 3rem;
+  padding: 4rem;
 }
 
 .pricing-header {
@@ -61,13 +61,13 @@ button:active {
 }
 .pricing-header h3 {
   font-family: "Karla-Bold", sans-serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #2ab2af;
   padding-bottom: 1rem;
 }
 .pricing-header h4 {
   font-family: "Karla-Bold", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #c0df34;
 }
 .pricing-header p {
@@ -82,7 +82,7 @@ button:active {
   grid-area: pricing-cta;
 }
 .pricing-cta h4 {
-  padding-bottom: 1.2rem;
+  padding-bottom: 1.4rem;
 }
 .pricing-cta span {
   font-weight: ligter;
@@ -104,9 +104,66 @@ button:active {
   grid-area: pricing-info;
 }
 .pricing-info h4 {
-  padding-bottom: 1.2rem;
+  padding-bottom: 1.4rem;
 }
 .pricing-info p {
   font-size: 1.2rem;
   color: #f2f2f2;
+}
+
+@media (max-width: 1200px) {
+  .container-fluid {
+    padding: 7% 13%;
+  }
+
+  .grid-item {
+    padding: 3rem;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "pricing-header " "pricing-info" "pricing-cta";
+  }
+
+  .pricing-header p {
+    padding-top: 3rem;
+  }
+
+  .pricing-cta h4 {
+    font-size: 2.4rem;
+  }
+  .pricing-cta p {
+    font-size: 1.6rem;
+    padding: 2rem 0 3rem 0;
+  }
+
+  .pricing-info h4 {
+    font-size: 2.4rem;
+  }
+  .pricing-info p {
+    font-size: 1.6rem;
+  }
+
+  .pricing-header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .pricing-cta {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .pricing-info {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
 }

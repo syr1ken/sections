@@ -1,0 +1,23 @@
+// Base
+body
+    color: $white
+    font-size: 62.5%
+    text-align: left
+    +karlaReg(1.4rem)
+
+.container-fluid
+    padding: 7% 18%
+
+//Buttons
+button
+    &:focus
+        outline: 0 !important
+    &:active
+        outline: 0 !important
+.button
+    background-color: $primary-bright-yellow
+    color: $white
+    min-height: 4rem
+    border: none
+    &:hover
+        background-color: darken($primary-bright-yellow, 6%)

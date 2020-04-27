@@ -1,79 +1,31 @@
-// Fonts
-@font-face
-    font-family: 'Karla-Regular'
-    src: url('../fonts/Karla-Regular.eot')
-    src: url('../fonts/Karla-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Karla-Regular.woff2') format('woff2'), url('../fonts/Karla-Regular.woff') format('woff'), url('../fonts/Karla-Regular.ttf') format('truetype')
-    font-weight: normal
-    font-style: normal
+@import 'fonts'
 
-@font-face
-    font-family: 'Karla-Bold'
-    src: url('../fonts/Karla-Bold.eot')
-    src: url('../fonts/Karla-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Karla-Bold.woff2') format('woff2'), url('../fonts/Karla-Bold.woff') format('woff'), url('../fonts/Karla-Bold.ttf') format('truetype')
-    font-weight: bold
-    font-style: normal
+@import 'mixins'
 
-// Font mixins
-=karlaReg($fz)
-    font-family: 'Karla-Regular', sans-serif
-    font-size: $fz
-=karlaBold($fz)
-    font-family: 'Karla-Bold', sans-serif
-    font-size: $fz
+@import 'colors'
 
-// Colors
-$primary-cyan: hsl(179, 62%, 43%)
-$primary-bright-yellow: hsl(71, 73%, 54%)
+@import 'base'
 
-$neutral-light-gray: hsl(204, 43%, 93%)
-$neutral-grayish-blue: hsl(218, 22%, 67%)
-
-$white: #fff
-$black: #000
-
-// Base
-body
-    color: $white
-    font-size: 62.5%
-    text-align: left
-    +karlaReg(1.4rem)
-
-.container-fluid
-    padding: 3% 15%
-
-//Buttons
-button
-    &:focus
-        outline: 0 !important
-    &:active
-        outline: 0 !important
-.button
-    background-color: $primary-bright-yellow
-    color: $white
-    min-height: 4rem
-    border: none
-    &:hover
-        background-color: darken($primary-bright-yellow, 6%)
 //Pricing section
 // Grid
 .grid
     display: grid
     grid-template-columns: 1fr 1fr
-    grid-template-rows: 40% 1fr
+    grid-template-rows: 43% 1fr
     grid-template-areas: "pricing-header pricing-header" "pricing-cta pricing-info"
     &-item
-        padding: 3rem
+        padding: 4rem
 
 .pricing-header
     background-color: $neutral-light-gray
     grid-area: pricing-header
     padding-bottom: 0
     h3
-        +karlaBold($fz: 2rem)
+        +karlaBold($fz: 2.2rem)
         color: $primary-cyan
         padding-bottom: 1rem
     h4
-        +karlaBold($fz: 1.6rem)
+        +karlaBold($fz: 1.8rem)
         color: $primary-bright-yellow
     p
         color: $neutral-grayish-blue
@@ -83,7 +35,7 @@ button
     background-color: $primary-cyan
     grid-area: pricing-cta
     h4
-        padding-bottom: 1.2rem
+        padding-bottom: 1.4rem
     span
         font-weight: ligter
         font-size: 1.2rem
@@ -98,7 +50,9 @@ button
     background-color: lighten($primary-cyan, 10%)
     grid-area: pricing-info
     h4
-        padding-bottom: 1.2rem
+        padding-bottom: 1.4rem
     p
         font-size: 1.2rem
         color: darken($white, 5%)
+
+@import 'media'
