@@ -1,0 +1,46 @@
+// Fonts
+@font-face 
+    font-family: 'Poppins-Regular'
+    src: url('../fonts/Poppins-Regular.eot')
+    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Regular.woff2') format('woff2'), url('../fonts/Poppins-Regular.woff') format('woff'), url('../fonts/Poppins-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+@font-face 
+    font-family: 'Poppins-Bold'
+    src: url('../fonts/Poppins-Bold.eot')
+    src: url('../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Bold.woff2') format('woff2'), url('../fonts/Poppins-Bold.woff') format('woff'), url('../fonts/Poppins-Bold.ttf') format('truetype')
+    font-weight: bold
+    font-style: normal
+
+@font-face 
+    font-family: 'OpenSans-Regular'
+    src: url('../fonts/OpenSans-Regular.eot')
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+//Mixins
+=poppinsReg($fz: 2rem)
+    font-family: 'Poppins-Regular', sans-serif
+    font-size: $fz
+
+=poppinsBold($fz: 2rem)
+    font-family: 'Poppins-Bold', sans-serif
+    font-size: $fz
+
+=openSansReg($fz: 1.4rem)
+    font-family: 'OpenSans-Regular', sans-serif
+    font-size: $fz
+
+//Colors
+$primary-violet: hsl(257, 40%, 49%)
+
+//Base
+body
+    +openSansReg($fz: 1.4rem)
+    font-size: 62.5%
+
+.container-fluid
+    padding: 7% 15%
+    
