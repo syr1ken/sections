@@ -33,6 +33,7 @@
 // Cards
 .card
     border: none
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.1)
     &-body
         display: grid
         padding: 10%
@@ -50,19 +51,17 @@
         grid-area: footer
         place-self: end
         width: 25%
-
-.c1
-    border-top: 5px solid $primary-cyan
-    grid-area: c1
-.c2
-    border-top: 5px solid $primary-red
-    grid-area: c2
-.c3
-    border-top: 5px solid $primary-orange
-    grid-area: c3
-.c4
-    border-top: 5px solid $primary-blue
-    grid-area: c4
-
+    &-one
+        border-top: 5px solid $primary-cyan
+        grid-area: c1
+    &-two
+        border-top: 5px solid $primary-red
+        grid-area: c2
+    &-three
+        border-top: 5px solid $primary-orange
+        grid-area: c3
+    &-four
+        border-top: 5px solid $primary-blue
+        grid-area: c4
 
 @import 'media'
