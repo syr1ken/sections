@@ -85,7 +85,7 @@ button:active {
   padding-bottom: 1.4rem;
 }
 .pricing-cta span {
-  font-weight: ligter;
+  font-weight: lighter;
   font-size: 1.2rem;
 }
 .pricing-cta span strong {
@@ -121,47 +121,112 @@ button:active {
   }
 }
 @media (max-width: 992px) {
-  body {
-    text-align: center;
+  .button {
+    font-size: 1.2rem;
+    min-height: 2rem;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "pricing-header " "pricing-info" "pricing-cta";
+  .container-fluid {
+    padding: 5% 11%;
   }
 
+  .grid-item {
+    padding: 2rem;
+  }
+
+  .pricing-header h3 {
+    font-size: 1.4rem;
+  }
+  .pricing-header h4 {
+    font-size: 1.2rem;
+  }
   .pricing-header p {
-    padding-top: 3rem;
+    font-size: 0.9rem;
+    padding-top: 1rem;
   }
 
   .pricing-cta h4 {
-    font-size: 2.4rem;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
   }
   .pricing-cta p {
-    font-size: 1.6rem;
-    padding: 2rem 0 3rem 0;
+    font-size: 0.9rem;
+    padding: 0.5rem 0 1rem 0;
+  }
+  .pricing-cta span {
+    font-size: 0.9rem;
+  }
+  .pricing-cta span strong {
+    margin-right: 1rem;
+    font-size: 1.8rem;
   }
 
   .pricing-info h4 {
-    font-size: 2.4rem;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
   }
   .pricing-info p {
-    font-size: 1.6rem;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "pricing-header " "pricing-info" "pricing-cta";
+  }
+  .grid-item {
+    padding: 2rem;
   }
 
+  .pricing-header h3 {
+    font-size: 1.4rem;
+  }
+  .pricing-header h4 {
+    font-size: 1.2rem;
+  }
+  .pricing-header p {
+    font-size: 0.9rem;
+    padding-top: 1rem;
+  }
+
+  .pricing-cta h4 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .pricing-cta p {
+    font-size: 0.9rem;
+    padding: 0.5rem 0 1rem 0;
+  }
+  .pricing-cta span {
+    font-size: 0.9rem;
+  }
+  .pricing-cta span strong {
+    margin-right: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .pricing-info h4 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .pricing-info p {
+    font-size: 0.9rem;
+  }
   .pricing-header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
   }
-
   .pricing-cta {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
-
   .pricing-info {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
