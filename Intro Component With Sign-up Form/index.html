@@ -1,37 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro Component With Sign-up Form</title>
-</head>
-<body>
-    <main class="main">
-        <div class="container">
-            <div class="main-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="main-content_text">
-                            <h1>Learn to code by watching others</h1>
-                            <p>See how experienced developers solve problems in real-time.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <button class="main-content-button">Try it free 7 days then $20/mo. thereafter</button>
-                        <form action="#" class="main-content-form">
-                            <div class="main-content-form-group">
-                                <input class="main-content-form-group-firstname form-control" type="text" placeholder="First Name">
-                                <input class="main-content-form-group-lastname form-control" type="text" placeholder="Last Name">
-                                <input class="main-content-form-group-email form-control email-input" type="email" placeholder="Email adress">
-                                <input class="main-content-form-group-password form-control" type="password" placeholder="Password">
-                                <button class="main-content-form-group-button btn btn-lg " type="submit">Claim your free trial</button>
-                                <small>By clicking the button, you are agreeing to our <span>Terms and Services</span></small>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4ebe998a10.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon32x32.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="container">
+        <div class="main-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="main-content_text">
+                <h1>Learn to code by watching others</h1>
+                <p>
+                  See how experienced developers solve problems in real-time.
+                  Watching scripted tutorials is great, but understanding how
+                  developers think is invaluable.
+                </p>
+              </div>
             </div>
+            <div class="col-md-6">
+              <button class="main-content-button btn btn-lg">
+                <span>Try it free 7 days</span> then $20/mo. thereafter
+              </button>
+              <form action="#" class="main-content-form">
+                <div class="main-content-form-group">
+                  <input
+                    class="main-content-form-firstname form-control"
+                    type="text"
+                    placeholder="First Name"
+                  />
+                  <input
+                    class="main-content-form-lastname form-control"
+                    type="text"
+                    placeholder="Last Name"
+                  />
+                  <input
+                    class="main-content-form-email form-control email-input"
+                    type="email"
+                    placeholder="Email adress"
+                  />
+                  <input
+                    class="main-content-form-password form-control"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <button
+                    class="main-content-form-button btn btn-lg"
+                    type="submit"
+                  >
+                    Claim your free trial
+                  </button>
+                  <small
+                    >By clicking the button, you are agreeing to our
+                    <a href="#">Terms and Services</a></small
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-    </main>
-</body>
+      </div>
+    </section>
+    <footer class="footer">
+      <a href="https://github.com/syr1ken">@syr1ken</a>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
