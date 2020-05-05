@@ -36,11 +36,9 @@
 // Colors
 $primary-blue: hsl(223, 87%, 63%)
 
-$secondary-pale-blue: hsl(223, 100%, 88%)
 $secondary-light-red: hsl(354, 100%, 66%)
 
 $neutral-gray: hsl(0, 0%, 59%)
-$neutral-dark-blue: hsl(209, 33%, 12%)
 
 $white: #fff
 $black: #111
@@ -97,23 +95,30 @@ a
         padding: 4rem 0
 .form
     &-group
-        display: flex
         padding: 0 25%
-        &-email
-            border-radius: 4rem
-            width: 70%
-            font-size: 1rem
-            padding: 1.5rem
-        &-btn
-            +libreFranklinSemiBold($fz: 0.8rem)
-            color: $white
-            border-radius: 4rem
-            background-color: $primary-blue
-            width: 30%
-            margin-left: 1rem
-            &:hover
+        &-input
+            display: flex
+            &-email
+                border-radius: 4rem
+                width: 70%
+                font-size: 1rem
+                padding: 1.5rem
+            &-btn
+                +libreFranklinSemiBold($fz: 0.8rem)
                 color: $white
-                background-color: lighten($primary-blue, 10%)
+                border-radius: 4rem
+                background-color: $primary-blue
+                width: 30%
+                margin-left: 1rem
+                &:hover
+                    color: $white
+                    background-color: lighten($primary-blue, 10%)
+        &-text
+            padding-left: 1rem
+            text-align: left
+            font-size: 0.8rem
+            padding-top: 1rem
+            display: none
 
 // Footer
 .footer
@@ -146,3 +151,16 @@ a
                 border: 1px soldi $primary-blue
                 background-color: $primary-blue
                 color: $white
+
+//Active
+.active
+    display: block
+
+.red
+    color: $secondary-light-red
+
+.error
+    border: 1px solid $secondary-light-red
+    color: $secondary-light-red
+    &::placeholder
+        color: $secondary-light-red

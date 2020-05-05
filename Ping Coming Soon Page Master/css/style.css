@@ -84,16 +84,18 @@ a:hover {
 }
 
 .form-group {
-  display: flex;
   padding: 0 25%;
 }
-.form-group-email {
+.form-group-input {
+  display: flex;
+}
+.form-group-input-email {
   border-radius: 4rem;
   width: 70%;
   font-size: 1rem;
   padding: 1.5rem;
 }
-.form-group-btn {
+.form-group-input-btn {
   font-family: "LibreFranklin-SemiBold", sans-serif;
   font-size: 0.8rem;
   color: #fff;
@@ -102,9 +104,16 @@ a:hover {
   width: 30%;
   margin-left: 1rem;
 }
-.form-group-btn:hover {
+.form-group-input-btn:hover {
   color: #fff;
   background-color: #7ea0f6;
+}
+.form-group-text {
+  padding-left: 1rem;
+  text-align: left;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  display: none;
 }
 
 .footer {
@@ -141,4 +150,20 @@ a:hover {
   border: 1px soldi #4f7df3;
   background-color: #4f7df3;
   color: #fff;
+}
+
+.active {
+  display: block;
+}
+
+.red {
+  color: #ff5263;
+}
+
+.error {
+  border: 1px solid #ff5263;
+  color: #ff5263;
+}
+.error::placeholder {
+  color: #ff5263;
 }
