@@ -1,77 +1,10 @@
-// Fonts
-@font-face
-    font-family: 'LibreFranklin-SemiBold'
-    src: url('../fonts/LibreFranklin-SemiBold.eot')
-    src: url('../fonts/LibreFranklin-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/LibreFranklin-SemiBold.woff2') format('woff2'), url('../fonts/LibreFranklin-SemiBold.woff') format('woff'), url('../fonts/LibreFranklin-SemiBold.ttf') format('truetype')
-    font-weight: 600
-    font-style: normal
+@import 'fonts'
 
-@font-face
-    font-family: 'LibreFranklin-Light'
-    src: url('../fonts/LibreFranklin-Light.eot')
-    src: url('../fonts/LibreFranklin-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/LibreFranklin-Light.woff2') format('woff2'), url('../fonts/LibreFranklin-Light.woff') format('woff'), url('../fonts/LibreFranklin-Light.ttf') format('truetype')
-    font-weight: 300
-    font-style: normal
+@import 'mixins'
 
-@font-face
-    font-family: 'LibreFranklin-Bold'
-    src: url('../fonts/LibreFranklin-Bold.eot')
-    src: url('../fonts/LibreFranklin-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/LibreFranklin-Bold.woff2') format('woff2'), url('../fonts/LibreFranklin-Bold.woff') format('woff'), url('../fonts/LibreFranklin-Bold.ttf') format('truetype')
-    font-weight: bold
-    font-style: normal
+@import 'colors'
 
-// Mixins
-=libreFranklinSemiBold($fz: 1rem)
-    font-family: 'LibreFranklin-SemiBold', sans-serif
-    font-size: $fz
-
-=libreFranklinLight($fz: 1rem)
-    font-family: 'LibreFranklin-Light', sans-serif
-    font-size: $fz
-
-=libreFranklinBold($fz: 1rem)
-    font-family: 'LibreFranklin-Bold', sans-serif
-    font-size: $fz
-
-// Colors
-$primary-blue: hsl(223, 87%, 63%)
-
-$secondary-light-red: hsl(354, 100%, 66%)
-
-$neutral-gray: hsl(0, 0%, 59%)
-
-$white: #fff
-$black: #111
-
-html, body
-    height: 100%
-
-body
-    color: $black
-    +libreFranklinLight($fz: 1rem)
-    font-size: 62.5%
-    display: flex
-    flex-direction: column
-    min-height: 100%
-
-button, input, a, textarea
-    &:focus
-        outline: none
-
-a
-    text-decoration: none
-    color: $primary-blue
-    &:focus
-        color: $primary-blue
-    &:hover
-        color: $primary-blue
-        text-decoration: none
-
-.main
-    flex: 1 0 auto
-
-.footer
-    flex: 0 0 auto
+@import 'base'
 
 // Header
 .header
@@ -163,29 +96,4 @@ a
     &::placeholder
         color: $secondary-light-red
 
-@media (max-width: 991px)
-    .form
-        &-group
-            padding: 0 15%
-    .main
-        img
-            width: 90%
-
-@media (max-width: 767px)
-    .header
-        padding: 3rem 0
-
-    .main
-        h1
-            font-size: 1.8rem
-            span
-                font-size: 1.8rem
-        img
-            width: 100%
-    .form
-        &-group
-            padding: 0 5%
-            &-text
-                padding-left: 0
-                text-align: center
-                margin-bottom: 1rem
+@import 'media'
