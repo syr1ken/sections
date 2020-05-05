@@ -1,93 +1,10 @@
-// Fonts
-@font-face
-    font-family: 'Poppins-Regular'
-    src: url('../fonts/Poppins-Regular.eot')
-    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Regular.woff2') format('woff2'), url('../fonts/Poppins-Regular.woff') format('woff'), url('../fonts/Poppins-Regular.ttf') format('truetype')
-    font-weight: normal
-    font-style: normal
+@import 'fonts'
 
-@font-face
-    font-family: 'Poppins-SemiBold'
-    src: url('../fonts/Poppins-SemiBold.eot')
-    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-SemiBold.woff2') format('woff2'), url('../fonts/Poppins-SemiBold.woff') format('woff'), url('../fonts/Poppins-SemiBold.ttf') format('truetype')
-    font-weight: 600
-    font-style: normal
+@import 'mixins'
 
-@font-face
-    font-family: 'Poppins-Medium'
-    src: url('../fonts/Poppins-Medium.eot')
-    src: url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Medium.woff2') format('woff2'), url('../fonts/Poppins-Medium.woff') format('woff'), url('../fonts/Poppins-Medium.ttf') format('truetype')
-    font-weight: 500
-    font-style: normal
+@import 'colors'
 
-@font-face
-    font-family: 'Poppins-Bold'
-    src: url('../fonts/Poppins-Bold.eot')
-    src: url('../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Bold.woff2') format('woff2'), url('../fonts/Poppins-Bold.woff') format('woff'), url('../fonts/Poppins-Bold.ttf') format('truetype')
-    font-weight: bold
-    font-style: normal
-
-// Mixins
-=poppinsReg($fz: 1rem)
-    font-family: 'Poppins-Regular', sans-serif
-    font-size: $fz
-
-=poppinsSemiBold($fz: 1rem)
-    font-family: 'Poppins-SemiBold', sans-serif
-    font-size: $fz
-
-=poppinsMedium($fz: 1rem)
-    font-family: 'Poppins-Medium', sans-serif
-    font-size: $fz
-
-=poppinsBold($fz: 1rem)
-    font-family: 'Poppins-Bold', sans-serif
-    font-size: $fz
-
-// Colors
-$primary-red: hsl(0, 100%, 74%) 
-$primary-green: hsl(154, 59%, 51%)
-
-$accent-blue: hsl(248, 32%, 49%)
-
-$neutral-dark-blue: hsl(249, 10%, 26%)
-$neutral-grayish-blue: hsl(246, 25%, 77%)
-
-$white: #fff
-$black: #111
-
-//Base
-html, body
-    height: 100%
-
-body
-    color: $black
-    +poppinsReg($fz: 1rem)
-    font-size: 62.5%
-    display: flex
-    flex-direction: column
-    min-height: 100%
-    background-color: $primary-red
-    background-image: url("../img/bg-intro-desktop.png")
-
-button, input, a, textarea
-    &:focus
-        outline: none
-
-a
-    text-decoration: none
-    color: $white
-    &:focus
-        color: $white
-    &:hover
-        color: $white
-        text-decoration: none
-
-.main
-    flex: 1 0 auto
-
-.footer
-    flex: 0 0 auto
+@import 'base'
 
 // Main Section
 .main
@@ -169,25 +86,4 @@ a
     &::placeholder
         color: $primary-red
 
-@media (max-width: 992px)
-    .main
-        &-content
-            &_text
-                h1
-                    font-size: 2.2rem
-
-@media (max-width: 768px)
-    .main
-        &-content
-            &_text
-                text-align: center
-                padding: 0 0 2rem
-                h1
-                    font-size: 3rem
-
-@media (max-width: 576px)
-    .main
-        &-content
-            &_text
-                h1
-                    font-size: 2.2rem
+@import 'media'
