@@ -6,3 +6,5 @@ Web pages sections templates.
 <a href="https://syr1ken.github.io/sections/Single Price Grid Component/"> Single Price Grid Component | HTML5 CSS3 Grid Bootstrap</a>  
 ### Huddle Single Introductory Section
 <a href="https://syr1ken.github.io/sections/Huddle Single Introductory Section/"> Huddle Single Introductory Section | HTML5 CSS3 Bootstrap</a>  
+### Intro Component With Sign-up Form
+<a href="https://syr1ken.github.io/sections/Intro Component With Sign-up Form/"> Intro Component With Sign-up Form | HTML5 CSS3 Bootstrap VanillaJS</a>  
