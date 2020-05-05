@@ -107,7 +107,7 @@ a:hover {
   text-align: center;
 }
 .main-content-form input {
-  margin: 1rem 0;
+  margin: 1rem 0 0.2rem;
   padding: 1.5rem;
   font-family: "Poppins-SemiBold", sans-serif;
   font-size: 0.8rem;
@@ -128,20 +128,44 @@ a:hover {
   box-shadow: 0 0.2rem 0 0 #269263;
   color: #fff;
 }
-.main-content-form small {
+.main-content-form-text {
   font-size: 0.7rem;
   color: #b9b6d3;
 }
-.main-content-form small a {
+.main-content-form-text a {
   font-family: "Poppins-Bold", sans-serif;
   font-size: 0.7rem;
   color: #ff7a7a;
+}
+
+.form-group-input {
+  text-align: right;
+}
+.form-group-input-text {
+  font-size: 0.7rem;
+  display: none;
 }
 
 .footer {
   font-size: 0.8rem;
   text-align: center;
   padding: 1rem;
+}
+
+.active {
+  display: block;
+}
+
+.red {
+  color: #ff7a7a;
+}
+
+.error {
+  border: 1px solid #ff7a7a;
+  color: #ff7a7a;
+}
+.error::placeholder {
+  color: #ff7a7a;
 }
 
 @media (max-width: 992px) {

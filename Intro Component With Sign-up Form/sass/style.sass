@@ -122,7 +122,7 @@ a
             padding: 2rem
             text-align: center
             input
-                margin: 1rem 0
+                margin: 1rem 0 0.2rem
                 padding: 1.5rem
                 +poppinsSemiBold($fz: 0.8rem)
             &-button
@@ -138,18 +138,36 @@ a
                     background-color: darken($primary-green, 10%)
                     box-shadow: 0 0.2rem 0 0 darken($primary-green, 15%)
                     color: $white
-            small
+            &-text
                 font-size: 0.7rem
                 color: $neutral-grayish-blue
                 a
                     +poppinsBold($fz: 0.7rem)
                     color: $primary-red
-
+.form-group-input
+    text-align: right
+    &-text
+        font-size: 0.7rem
+        display: none
+        
 //Footer
 .footer
     font-size: 0.8rem
     text-align: center
     padding: 1rem
+
+//Active
+.active
+    display: block
+
+.red
+    color: $primary-red
+
+.error
+    border: 1px solid $primary-red
+    color: $primary-red
+    &::placeholder
+        color: $primary-red
 
 @media (max-width: 992px)
     .main
