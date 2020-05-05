@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "LibreFranklin-SemiBold";
+  src: url("../fonts/LibreFranklin-SemiBold.eot");
+  src: url("../fonts/LibreFranklin-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/LibreFranklin-SemiBold.woff2") format("woff2"), url("../fonts/LibreFranklin-SemiBold.woff") format("woff"), url("../fonts/LibreFranklin-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LibreFranklin-Light";
+  src: url("../fonts/LibreFranklin-Light.eot");
+  src: url("../fonts/LibreFranklin-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/LibreFranklin-Light.woff2") format("woff2"), url("../fonts/LibreFranklin-Light.woff") format("woff"), url("../fonts/LibreFranklin-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LibreFranklin-Bold";
+  src: url("../fonts/LibreFranklin-Bold.eot");
+  src: url("../fonts/LibreFranklin-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LibreFranklin-Bold.woff2") format("woff2"), url("../fonts/LibreFranklin-Bold.woff") format("woff"), url("../fonts/LibreFranklin-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #111;
+  font-family: "LibreFranklin-Light", sans-serif;
+  font-size: 1rem;
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+button:focus, input:focus, a:focus, textarea:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #4f7df3;
+}
+a:focus {
+  color: #4f7df3;
+}
+a:hover {
+  color: #4f7df3;
+  text-decoration: none;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
