@@ -75,3 +75,74 @@ a
 .footer
     flex: 0 0 auto
 
+// Header
+.header
+    text-align: center
+    padding: 4rem
+
+// Main
+.main
+    text-align: center
+    h1
+        font-size: 3rem
+        color: $neutral-gray
+        span
+            +libreFranklinBold($fz: 3rem)
+            color: $black
+    p
+        font-size: 1rem
+        padding: 1rem 0
+    img
+        width: 70%
+        padding: 4rem 0
+.form
+    &-group
+        display: flex
+        padding: 0 25%
+        &-email
+            border-radius: 4rem
+            width: 70%
+            font-size: 1rem
+            padding: 1.5rem
+        &-btn
+            +libreFranklinSemiBold($fz: 0.8rem)
+            color: $white
+            border-radius: 4rem
+            background-color: $primary-blue
+            width: 30%
+            margin-left: 1rem
+            &:hover
+                color: $white
+                background-color: lighten($primary-blue, 10%)
+
+// Footer
+.footer
+    text-align: center
+    font-size: 0.8rem
+    &-author
+        padding-bottom: 1rem
+
+.socials
+    &-list
+        display: block
+        margin: 0 auto
+        padding: 2rem 0 0 0
+        list-style: none
+        width: 100%
+    &-item
+        display: inline-block
+        padding: 0 0.3rem
+        margin-bottom: 2rem
+        a
+            display: inline-block
+            width: 2rem
+            height: 2rem
+            font-size: 1rem
+            border: 1px solid lighten($neutral-gray, 30%)
+            border-radius: 50%
+            padding-top: 10%
+            text-align: center
+            &:hover
+                border: 1px soldi $primary-blue
+                background-color: $primary-blue
+                color: $white

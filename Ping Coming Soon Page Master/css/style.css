@@ -56,3 +56,89 @@ a:hover {
 .footer {
   flex: 0 0 auto;
 }
+
+.header {
+  text-align: center;
+  padding: 4rem;
+}
+
+.main {
+  text-align: center;
+}
+.main h1 {
+  font-size: 3rem;
+  color: #969696;
+}
+.main h1 span {
+  font-family: "LibreFranklin-Bold", sans-serif;
+  font-size: 3rem;
+  color: #111;
+}
+.main p {
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+.main img {
+  width: 70%;
+  padding: 4rem 0;
+}
+
+.form-group {
+  display: flex;
+  padding: 0 25%;
+}
+.form-group-email {
+  border-radius: 4rem;
+  width: 70%;
+  font-size: 1rem;
+  padding: 1.5rem;
+}
+.form-group-btn {
+  font-family: "LibreFranklin-SemiBold", sans-serif;
+  font-size: 0.8rem;
+  color: #fff;
+  border-radius: 4rem;
+  background-color: #4f7df3;
+  width: 30%;
+  margin-left: 1rem;
+}
+.form-group-btn:hover {
+  color: #fff;
+  background-color: #7ea0f6;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.footer-author {
+  padding-bottom: 1rem;
+}
+
+.socials-list {
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0 0 0;
+  list-style: none;
+  width: 100%;
+}
+.socials-item {
+  display: inline-block;
+  padding: 0 0.3rem;
+  margin-bottom: 2rem;
+}
+.socials-item a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+  padding-top: 10%;
+  text-align: center;
+}
+.socials-item a:hover {
+  border: 1px soldi #4f7df3;
+  background-color: #4f7df3;
+  color: #fff;
+}
